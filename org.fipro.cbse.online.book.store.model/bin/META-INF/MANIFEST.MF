@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1737213971873
+Bundle-ActivationPolicy: lazy
+Bundle-ManifestVersion: 2
+Bundle-Name: Model Services
+Bundle-SymbolicName: org.fipro.cbse.online.book.store.model
+Bundle-Vendor: Putina Iasmina-Elena
+Bundle-Version: 1.0.0.qualifier
+Created-By: 23.0.1 (Eclipse Adoptium)
+Export-Package: org.fipro.cbse.online.book.store.model;version="1.0.0"
+Import-Package: java.lang,java.lang.invoke
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=17))"
+Tool: Bnd-7.1.0.202411251545
+

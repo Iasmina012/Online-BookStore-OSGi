@@ -1,0 +1,11 @@
+Bundle-Name: Model Services
+Bundle-SymbolicName: org.fipro.cbse.online.book.store.model
+Bundle-Vendor: Putina Iasmina-Elena
+Bundle-Version: 1.0.0.qualifier
+Bundle-ActivationPolicy: lazy
+-runee: JavaSE-17
+Export-Package: \
+    org.fipro.cbse.online.book.store.model;version="1.0.0"
+Import-Package: \
+    java.lang, \
+    *

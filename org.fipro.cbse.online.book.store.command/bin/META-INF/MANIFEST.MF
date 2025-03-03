@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1737217746684
+Bundle-ActivationPolicy: lazy
+Bundle-ManifestVersion: 2
+Bundle-Name: Command Services
+Bundle-SymbolicName: org.fipro.cbse.online.book.store.command
+Bundle-Vendor: Putina Iasmina-Elena
+Bundle-Version: 1.0.0.qualifier
+Created-By: 23.0.1 (Eclipse Adoptium)
+Export-Package: org.fipro.cbse.online.book.store.command;version="1.0.
+ 0"
+Import-Package: org.fipro.cbse.online.book.store.api;version="[1.0,2.0
+ )",org.fipro.cbse.online.book.store.model;version="[1.0,2.0)",java.io
+ ,java.lang,java.lang.invoke,java.util,java.util.function,org.osgi.ser
+ vice.component.annotations;version="[1.5.0,2.0.0)"
+Provide-Capability: osgi.service;objectClass:List<String>="org.fipro.c
+ bse.online.book.store.command.OnlineBookStoreCommand";uses:="org.fipr
+ o.cbse.online.book.store.command"
+Require-Capability: osgi.service;filter:="(objectClass=org.fipro.cbse.
+ online.book.store.api.IBookInventory)";effective:=active,osgi.service
+ ;filter:="(objectClass=org.fipro.cbse.online.book.store.api.IBookOrde
+ r)";effective:=active,osgi.service;filter:="(objectClass=org.fipro.cb
+ se.online.book.store.api.IDatabaseAccess)";effective:=active,osgi.ser
+ vice;filter:="(objectClass=org.fipro.cbse.online.book.store.api.INetw
+ orkConnector)";effective:=active,osgi.extender;filter:="(&(osgi.exten
+ der=osgi.component)(version>=1.5.0)(!(version>=2.0.0)))",osgi.ee;filt
+ er:="(&(osgi.ee=JavaSE)(version=17))"
+Service-Component: OSGI-INF/org.fipro.cbse.online.book.store.command.O
+ nlineBookStoreCommand.xml
+Tool: Bnd-7.1.0.202411251545
+

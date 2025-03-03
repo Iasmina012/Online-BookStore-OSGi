@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="org.fipro.cbse.online.book.store.command.OnlineBookStoreCommand">
+  <property name="osgi.command.scope" type="String" value="fipro"/>
+  <property name="osgi.command.function" type="String">connect
+stockInventory
+orderBook
+disconnect</property>
+  <service>
+    <provide interface="org.fipro.cbse.online.book.store.command.OnlineBookStoreCommand"/>
+  </service>
+  <reference name="bookInventory" interface="org.fipro.cbse.online.book.store.api.IBookInventory" field="bookInventory"/>
+  <reference name="bookOrder" interface="org.fipro.cbse.online.book.store.api.IBookOrder" field="bookOrder"/>
+  <reference name="databaseAccess" interface="org.fipro.cbse.online.book.store.api.IDatabaseAccess" field="databaseAccess"/>
+  <reference name="networkConnector" interface="org.fipro.cbse.online.book.store.api.INetworkConnector" field="networkConnector"/>
+  <implementation class="org.fipro.cbse.online.book.store.command.OnlineBookStoreCommand"/>
+</scr:component>

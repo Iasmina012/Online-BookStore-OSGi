@@ -1,0 +1,16 @@
+Bundle-Name: Impl Services
+Bundle-SymbolicName: org.fipro.cbse.online.book.store.impl
+Bundle-Vendor: Putina Iasmina-Elena
+Bundle-Version: 1.0.0.qualifier
+Bundle-ActivationPolicy: lazy
+-runee: JavaSE-17
+-buildpath: \
+    org.fipro.cbse.online.book.store.api;version=1.0.0, \
+    org.fipro.cbse.online.book.store.model;version=1.0.0
+Export-Package: \
+    org.fipro.cbse.online.book.store.impl;version="1.0.0"
+Import-Package: \
+    org.fipro.cbse.online.book.store.api;version="[1.0,2.0)", \
+    org.fipro.cbse.online.book.store.model;version="[1.0,2.0)", \
+    org.osgi.service.component.annotations;version="[1.5.0,2.0.0)", \
+    java.*

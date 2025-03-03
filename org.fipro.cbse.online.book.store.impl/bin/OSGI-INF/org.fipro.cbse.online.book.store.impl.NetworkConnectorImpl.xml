@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="org.fipro.cbse.online.book.store.impl.NetworkConnectorImpl">
+  <service>
+    <provide interface="org.fipro.cbse.online.book.store.api.INetworkConnector"/>
+  </service>
+  <implementation class="org.fipro.cbse.online.book.store.impl.NetworkConnectorImpl"/>
+</scr:component>

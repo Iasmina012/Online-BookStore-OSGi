@@ -1,0 +1,40 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1737218473727
+Bundle-ActivationPolicy: lazy
+Bundle-ManifestVersion: 2
+Bundle-Name: Impl Services
+Bundle-SymbolicName: org.fipro.cbse.online.book.store.impl
+Bundle-Vendor: Putina Iasmina-Elena
+Bundle-Version: 1.0.0.qualifier
+Created-By: 23.0.1 (Eclipse Adoptium)
+Export-Package: org.fipro.cbse.online.book.store.impl;version="1.0.0";
+ uses:="org.fipro.cbse.online.book.store.api,org.fipro.cbse.online.boo
+ k.store.model"
+Import-Package: org.fipro.cbse.online.book.store.api;version="[1.0,2.0
+ )",org.fipro.cbse.online.book.store.model;version="[1.0,2.0)",java.io
+ ,java.lang,java.lang.invoke,java.util,org.osgi.service.component.anno
+ tations;version="[1.5.0,2.0.0)"
+Provide-Capability: osgi.service;objectClass:List<String>="org.fipro.c
+ bse.online.book.store.api.IBookInventory";uses:="org.fipro.cbse.onlin
+ e.book.store.api",osgi.service;objectClass:List<String>="org.fipro.cb
+ se.online.book.store.api.IBookOrder";uses:="org.fipro.cbse.online.boo
+ k.store.api",osgi.service;objectClass:List<String>="org.fipro.cbse.on
+ line.book.store.api.IDatabaseAccess";uses:="org.fipro.cbse.online.boo
+ k.store.api",osgi.service;objectClass:List<String>="org.fipro.cbse.on
+ line.book.store.api.INetworkConnector";uses:="org.fipro.cbse.online.b
+ ook.store.api"
+Require-Capability: osgi.service;filter:="(objectClass=org.fipro.cbse.
+ online.book.store.api.IBookInventory)";effective:=active,osgi.service
+ ;filter:="(objectClass=org.fipro.cbse.online.book.store.api.IDatabase
+ Access)";effective:=active,osgi.service;filter:="(objectClass=org.fip
+ ro.cbse.online.book.store.api.INetworkConnector)";effective:=active,o
+ sgi.extender;filter:="(&(osgi.extender=osgi.component)(version>=1.5.0
+ )(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=17
+ ))"
+Service-Component: OSGI-INF/org.fipro.cbse.online.book.store.impl.Book
+ InventoryImpl.xml,OSGI-INF/org.fipro.cbse.online.book.store.impl.Book
+ OrderImpl.xml,OSGI-INF/org.fipro.cbse.online.book.store.impl.Database
+ AccessImpl.xml,OSGI-INF/org.fipro.cbse.online.book.store.impl.Network
+ ConnectorImpl.xml
+Tool: Bnd-7.1.0.202411251545
+
